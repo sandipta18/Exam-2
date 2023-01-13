@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        html{
+            overflow-x: hidden;
+        }
+    .navbar{
+        height: 230px;
+        width: 100vw;
+        position: relative;
+       
+    }
+    .nav1{
+        height: 70px;
+        width: 100vw;
+        background-color: rgba(3,42,49,255);
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .nav2{
+        height: 90px;
+        width: 100vw;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav3{
+        height: 70px;
+        width: 100%;
+        background-color: #813d16;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .nav1 ul li{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 22px;
+        
+    }
+    .left{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        gap: 30px;
+        margin-left: 120px;
+        padding-top: 25px;
+    }
+    .right{
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+       height: 70px;
+       gap: 80px;
+       padding-right: 145px;
+       border-right: 1px solid white;
+      
+        
+    }
+    .left-l1{
+        border-right: 1px solid white;
+        width: 280px;
+        
+    }
+    .left-list{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 42%;
+    gap: 40px;
+    font-weight: bold;
+    }
+    .entp{
+        background-image: url('Design-set1/Images/logo.svg');
+        display: flex;
+        background-repeat: no-repeat;
+        height: 63px;
+        width: 170px;
+        position: absolute;
+        top: 28px;
+        left: 116px;
+    
+    }
+    .call{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: 34%;
+        bottom: 20%;
+        color: rgba(3,42,49,255);
+        font-weight: bold;
+        line-height: 16px;
+    }
+    .email{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: 20%;
+        bottom: 20%;
+        color: rgba(3,42,49,255);
+        font-weight: bold;
+        line-height: 16px;
+    }
+    .nav3  li{
+       display: flex;
+       color: white;
+       font-size: 20px;
+
+        
+    }
+    .nav-sb{
+        height: 50px;
+        display: flex;
+        position: absolute;
+        right: 180px;
+        bottom: 15px;
+        border: none;
+        width: 250px;
+        height: 40px;
+        background-color:white;
+        background-blend-mode:color-burn;
+        opacity: 0.5;
+    }
+    ::placeholder{
+        color: black;
+        opacity: 1;
+        font-weight: bolder;
+        padding: 20px;
+    }
+    .sicon{
+        background-image: url('Design-set1/Icons/search.png');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 185px;
+        bottom: 15px;
+    
+    }
+    .banner-image
+    {
+        position: relative;
+        background-image: url('Design-set1/Images/banner.jpg');
+        width: 100%;
+        height:720px;
+       
+    }
+  
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 720px;
+        opacity: 0.8;
+    }
+    .hello,.hello2{
+        font-size: 100px;
+        color: white;
+    }
+    .content{
+        display: flex;
+       flex-direction: column;
+       position: absolute;
+       left: 200px;
+       top: 100px;
+        
+    }
+    .hello3{
+        font-size: 25px;
+        color: white;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .sub-part{
+        height: 100px;
+        width: 700px;
+        position: absolute;
+        bottom: 150px;
+        left: 205px;
+        display: flex;
+       align-items: center;
+       gap: 20px;
+
+    }
+    .white-box{
+        height: 80px;
+        width: 180px;
+        background-color: white;
+        opacity: 1;
+    }
+    .box-wup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        color: #813d16;
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    .play-btn{
+        background-image: url('Design-set1/Icons/play.png');
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 20px;
+        top:  20px;
+    }
+    .brownbtn{
+        background: saddlebrown;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position:relative;
+        opacity: 0.6;
+    }
+    #hew{
+        color:white;
+        font-size: 20px;
+    }
+    .foot{
+        height: 150px;
+        width: 100%;
+        background-color: rgba(3,42,49,255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+   
+
+    .foot>div{
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-right: 1px solid white;
+        width: 254px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+    .icon-1{
+        background-image: url('Design-set1/Icons/deadline.png');
+        height: 30px;
+        width: 30px;
+    }
+    .icon-2{
+        background-image: url('Design-set1/Icons/price.png');
+        height: 30px;
+        width: 30px;
+    }
+    .icon-3{
+        background-image: url('Design-set1/Icons/quality.png');
+        height: 30px;
+        width: 30px;
+    }
+    .icon-4{
+        background-image: url('Design-set1/Icons/performance.png');
+        height: 30px;
+        width: 30px;
+    }
+    .icon-5{
+        background-image: url('Design-set1/Icons/comms.png');
+        height: 30px;
+        width: 30px;
+    }
+    .icon-6{
+        background-image: url('Design-set1/Icons/support.png');
+        height: 30px;
+        width: 30px;
+    }
+    .foot>div>div{
+        height: 50px;
+        background-repeat: no-repeat;
+      margin-right: 15px;
+    }
+    #fb{
+        background-image: url('Design-set1/Icons/facebook.png');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        margin-right: -75px;
+        margin-top: 8px;
+
+    }
+    #lnkd{
+        background-image: url('Design-set1/Icons/linkedin.png');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        margin-right: -75px;
+        margin-top: 8px;
+    }
+    #twit{
+        background-image: url('Design-set1/Icons/youtube.png');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        margin-right: -75px;
+        margin-top: 14px;
+    }
+    #youtb{
+        background-image: url('Design-set1/Icons/youtube.png');
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        margin-right: -75px;
+        margin-top: 14px;
+    }
+    .call-icon{
+        background-image: url('Design-set1/Icons/phone.png');
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: -40px;
+        background-repeat: no-repeat;
+    }
+    .email-icon{
+        background-image: url('Design-set1/Icons/email.png');
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: -40px;
+        background-repeat: no-repeat;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+    <div class="nav1">
+        <ul class="left">
+            <li class="left-l1">240 Parkway United States</li>
+            <li class="left-l2">Mon-Fri : 9:30 Am - 6:24 Am</li>
+        </ul>
+        <ul class="right">
+            <span id="fb"></span><li>Facebook</li>
+            <span id="lnkd"></span><li>Linkedin</li>
+            <span id="twit"></span><li>Twitter</li>
+            <span id="youtb"></span><li>Youtube</li>
+        </ul>
+
+    </div>
+    <div class="nav2">
+        <div class="entp"></div>
+        <div class="call">
+            <div class="call-icon"></div><span id="call-text">Call us</span> <br> <span id="pn">+012 234 567 892</span>
+        </div>
+        <div class="email">
+            <div class="email-icon"></div><span id="email-text">Email Address</span> <br> <span id="id">enterprisesinc@gmail.com</span>
+        </div>
+    </div>
+    <div class="nav3">
+        <ul class="left-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+        <input type="Search" placeholder="Enter Search Now..." class="nav-sb"><div class="sicon"></div></input>
+    </div>
+    </div>
+
+     <!-- Body -->
+   
+    <div class="banner-image">
+          <div class="overlay">
+            <div class="content">
+                <span class="hello">Hello !</span>
+                <span class="hello2">You are Here</span>
+                <span class="hello3">
+                <p>We Can Help You To Build The Value For Your Business. Well It Is Not Only <br> About Beautiful Design
+                But Also About Greater Functionality And Flexibility. <br>
+                Let Us Help You With Your Business</p>
+                </span>
+             </div>
+          </div>
+             
+           
+        <div class="sub-part">
+            <div class="white-box">
+                <p class="box-wup">View All Services</p>
+            </div>
+            <div class="brownbtn">
+                <span class="play-btn"></span>
+            </div>
+            <p id="hew">How we Work</p>
+           </div>
+        </div>
+    </div>
+
+   
+   
+     <!-- Footer -->
+     <div class="footer">
+     <div class="foot">
+   
+    <div class="box1"><div class="icon-1"></div><span>Strict <br> Deadlines</span></div>
+    <div class="box2"><div class="icon-2"></div><span>Best <br> Pricing</span></div>
+    <div class="box3"><div class="icon-3"></div><span>High <br> Quality</span></div>
+    <div class="box4"><div class="icon-4"></div><span>Performance <br> Develop</span></div>
+    <div class="box5"><div class="icon-5"></div><span>Communicate  <br> Skills</span></div>
+    <div class="box6" style="border:none"><div class="icon-6"></div><span>24/7 <br> Support </span></div>
+     </div>
+     </div>
+</body>
+</html>
